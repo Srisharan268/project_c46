@@ -20,7 +20,7 @@ var textObject;
 var backButton;
 var county = 0;
 var cybertronRSI,cybertronBSI,cybertronYSI;
-var character = "mani",levelObj;
+var character,levelObj;
 var level_1_joined,lvl1_bg,level_1_done;
 var spaceShip,spaceShipI;
 var gun_down,gun_up,gun_downI,gun_upI;
@@ -190,11 +190,8 @@ function setup() {
 }
 
 function draw() {
-  console.log(countS2)
   background(bg); 
-  
   drawSprites();
-
   
 if(gameState == 0 || gameState === undefined){
     if(gameState0 == 0){
@@ -258,9 +255,9 @@ if(gameState == 0 || gameState === undefined){
         playerCount+=1;
         player.index = playerCount;
         if(player.index == 1){
-          //character = "arjun"
+          character = "arjun"
         }else if(player.index == 2){
-          //character = "sai"
+          character = "sai"
         }else if(player.index == 3){
           character = "mani"
         }
