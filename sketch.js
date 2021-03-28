@@ -1,5 +1,5 @@
 var database;
-var gameState,gameState0 = 0 ,gameState1 = 3;
+var gameState,gameState0 = 0 ,gameState1 = 0;
 var startButton;
 var img1,img2,bgi1,bgi2,bgi3,bgi4,bgi5,bgi5Hologram,bgi6,bgii,lvl1_bgi;
 var game,form,player,codeEntered;
