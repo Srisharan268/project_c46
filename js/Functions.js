@@ -8,6 +8,7 @@ function hideLevel1(){
   gun_down.visible = false;
   gun_up.visible = false;
   cracksFixed = 0;
+  dronesDead = 0;
   for(var i in droneA1){
     droneA1[i].destroy();
   }
