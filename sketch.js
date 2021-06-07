@@ -191,9 +191,6 @@ function setup() {
 
 function draw() {
   background(bg); 
-  fill("white")
-  textSize(30)
-  text("toches"+touches.length,100,100)
   drawSprites();
   
 if(gameState == 0 || gameState === undefined){
@@ -212,7 +209,7 @@ if(gameState == 0 || gameState === undefined){
       text("start",320,760);
       pop();
 
-      if(mousePressedOver(startButton)){
+      if(mousePressedOver(startButton) || touches.length=1){
         gameState0 = 1;
       }
     }
