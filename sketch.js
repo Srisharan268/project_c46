@@ -209,7 +209,7 @@ if(gameState == 0 || gameState === undefined){
       text("start",320,760);
       pop();
 
-      if(mousePressedOver(startButton) || touches.length=1){
+      if(mousePressedOver(startButton) || touches.length ==1){
         gameState0 = 1;
       }
     }
