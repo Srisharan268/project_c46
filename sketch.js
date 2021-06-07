@@ -1,5 +1,5 @@
 var database;
-var gameState,gameState0 = 0 ,gameState1 = 0;
+var gameState,gameState0 = 0 ,gameState1 = 1;
 var startButton;
 var img1,img2,bgi1,bgi2,bgi3,bgi4,bgi5,bgi5Hologram,bgi6,bgii,lvl1_bgi;
 var game,form,player,codeEntered;
@@ -191,6 +191,9 @@ function setup() {
 
 function draw() {
   background(bg); 
+  fill("white")
+  textSize(30)
+  text("toches"+touches.length,100,100)
   drawSprites();
   
 if(gameState == 0 || gameState === undefined){
